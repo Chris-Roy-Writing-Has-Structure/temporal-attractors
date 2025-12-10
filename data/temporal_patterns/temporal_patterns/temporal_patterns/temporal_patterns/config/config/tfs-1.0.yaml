@@ -1,0 +1,25 @@
+feature_set_id: "TFS-1.0"
+corpus_version: "v0.1"
+
+feature_extractor:
+  ioi_bins: 5
+  strong_tol: 0.05
+  max_levels: 4
+  rate_min: 0.0
+  rate_max: 10.0
+  jitter_max: 0.1
+
+clustering:
+  algorithm: "hdbscan"
+  hdbscan_min_cluster_size: 30
+  hdbscan_min_samples: 10
+
+umap:
+  n_neighbors: 30
+  min_dist: 0.1
+  n_components: 2
+
+negative_controls:
+  jitter_strength: 0.15
+  shuffle_ioi: true
+  dense_control: true
