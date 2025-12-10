@@ -1,0 +1,58 @@
+# Schema for temporal-attractor analysis configs (TFS-x.y)
+
+version: "0.1"
+
+fields:
+  feature_set_id:
+    type: string
+    description: "Feature-set version ID (e.g. TFS-1.0)"
+
+  corpus_version:
+    type: string
+    description: "Logical data snapshot ID (e.g. corpus v0.1)"
+
+  feature_extractor:
+    type: object
+    properties:
+      ioi_bins:
+        type: integer
+      strong_tol:
+        type: number
+      max_levels:
+        type: integer
+      rate_min:
+        type: number
+      rate_max:
+        type: number
+      jitter_max:
+        type: number
+
+  clustering:
+    type: object
+    properties:
+      algorithm:
+        type: string
+      hdbscan_min_cluster_size:
+        type: integer
+      hdbscan_min_samples:
+        type: integer
+
+  umap:
+    type: object
+    properties:
+      n_neighbors:
+        type: integer
+      min_dist:
+        type: number
+      n_components:
+        type: integer
+
+  negative_controls:
+    type: object
+    properties:
+      jitter_strength:
+        type: number
+      shuffle_ioi:
+        type: boolean
+      dense_control:
+        type: boolean
