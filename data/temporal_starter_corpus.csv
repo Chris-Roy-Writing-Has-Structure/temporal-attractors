@@ -1,0 +1,6 @@
+segment_id,tradition_id,modality,functional_context,source_type,tempo_bpm,language,participant_id,cycle_duration,onsets,accents
+seg001,starter_music,percussion,dance,synthetic,120,,,"1.0","[0.0, 0.5, 1.0, 1.5, 2.0]","[1.0, 0.5, 0.8, 0.4, 1.0]"
+seg002,starter_speech,speech,chant,synthetic,90,en,,,"1.0","[0.0, 0.4, 0.8, 1.4, 2.0]","[0.3, 0.7, 0.5, 0.9, 0.2]"
+seg003,starter_locomotion,locomotion,walk,synthetic,100,,subj01,"2.0","[0.0, 0.6, 1.0, 1.6, 2.0]","[0.5, 0.5, 0.5, 0.5, 0.5]"
+seg004,starter_music,percussion,ritual,synthetic,110,,,"1.0","[0.0, 0.33, 0.66, 1.0]","[1.0, 0.6, 0.8, 1.0]"
+seg005,starter_speech,speech,conversation,synthetic,85,fr,,,"1.5","[0.0, 0.3, 0.7, 1.2, 1.5]","[0.4, 0.8, 0.6, 0.7, 0.5]"
